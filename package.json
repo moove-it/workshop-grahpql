@@ -1,0 +1,25 @@
+{
+  "name": "monoreactql",
+  "description": "Create a monorepo with React and GraphQL",
+  "private": true,
+  "version": "1.0.0",
+  "author": "slorenzo <SebastianLorenzo@gmail.com>",
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  },
+  "scripts": {
+    "api": "yarn workspace @monoreactql/api start",
+    "www": "yarn workspace @monoreactql/www start",
+    "dev": "concurrently -n www,api --kill-others \"yarn www\" \"yarn api\""
+  },
+  "repository": "https://github.com/slorenzo/monoreactql.git",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^4.1.0"
+  },
+  "dependencies": {
+    "graphql": "^14.1.1"
+  }
+}

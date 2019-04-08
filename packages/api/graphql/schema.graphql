@@ -1,0 +1,13 @@
+scalar GraphQLDateTime
+
+type Cards {
+  title: String!
+  owner: String!
+  isActive: Boolean!
+  createdAt: GraphQLDateTime!
+  updatedAt: GraphQLDateTime!
+}
+
+type Query {
+  cards: [Cards]
+}

@@ -1,0 +1,48 @@
+{
+  "name": "@monoreactql/api",
+  "description": "Server based on Apollo Server",
+  "private": true,
+  "version": "1.0.0",
+  "author": "slorenzo <SebastianLorenzo@gmail.com>",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "yarn clean && babel . --out-dir dist",
+    "start": "nodemon --watch . --ignore dist/ --exec yarn serve",
+    "serve": "yarn build && node dist/index.js",
+    "clean": "rimraf dist/*",
+    "test": "echo \"No test specified\" && exit 0"
+  },
+  "dependencies": {
+    "@babel/cli": "^7.2.3",
+    "apollo-engine": "^1.1.2",
+    "apollo-server": "^2.3.1",
+    "apollo-server-express": "^2.4.8",
+    "cors": "^2.8.5",
+    "dotenv": "^6.2.0",
+    "express": "^4.16.4",
+    "graphql": "^14.0.2",
+    "graphql-cost-analysis": "^1.0.3",
+    "graphql-depth-limit": "^1.1.0",
+    "graphql-import": "^0.7.1",
+    "graphql-iso-date": "^3.6.1",
+    "graphql-redis-subscriptions": "^2.1.0",
+    "graphql-tools": "^4.0.4",
+    "helmet": "^3.16.0",
+    "hpp": "^0.2.2",
+    "http": "^0.0.0",
+    "ioredis": "^4.6.2",
+    "jsonwebtoken": "^8.4.0",
+    "mongoose": "^5.4.19",
+    "morgan": "^1.9.1",
+    "nodemon": "^1.18.10",
+    "toobusy-js": "^0.5.1"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.4.0",
+    "@babel/preset-env": "^7.4.2",
+    "@babel/register": "^7.4.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "rimraf": "^2.6.3"
+  }
+}
