@@ -1,13 +1,34 @@
 scalar GraphQLDateTime
 
-type Cards {
+enum CardType {
+  HISTORY
+  ART
+  ECONOMY
+}
+
+type Card {
+  id: String!
   title: String!
+  subtitle: String!
+  description: String!
   owner: String!
+  kind: CardType!
   isActive: Boolean!
   createdAt: GraphQLDateTime!
   updatedAt: GraphQLDateTime!
 }
 
 type Query {
-  cards: [Cards]
+  cards: [Card]
+}
+
+type Mutation {
+  addCard(
+    title: String!
+    subtitle: String!
+    description: String!
+    owner: String!
+    kind: String!
+    isActive: Boolean!
+  ): Card
 }

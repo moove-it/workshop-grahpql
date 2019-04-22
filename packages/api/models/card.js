@@ -7,9 +7,22 @@ const CardSchema = new Schema(
       type: String,
       required: true,
     },
+    subtitle: {
+      type: String,
+      required: true,
+    },
+    description: {
+      type: String,
+      required: true,
+    },
     owner: {
       type: String,
       required: true,
+    },
+    kind: {
+      type: String,
+      required: true,
+      enum: ['HISTORY', 'ART', 'ECONOMY'],
     },
     isActive: {
       type: Boolean,

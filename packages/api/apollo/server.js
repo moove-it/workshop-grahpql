@@ -5,7 +5,6 @@ import costAnalysis from 'graphql-cost-analysis';
 import { SUBSCRIPTIONS_PATH } from '../constants';
 import schema from '../graphql/schema';
 
-
 // Evil hack to make graphql-cost-analysis work with Apollo Server v2
 // https://github.com/pa-bru/graphql-cost-analysis/issues/12#issuecomment-420991259
 class ProtectedApolloServer extends ApolloServer {
@@ -40,7 +39,7 @@ const server = new ProtectedApolloServer({
       // Here you can set if the user online
     },
   },
-  validationRules: [depthLimit(10)],
+  validationRules: [depthLimit(10)], // Set your depth limit
 });
 
 export default server;

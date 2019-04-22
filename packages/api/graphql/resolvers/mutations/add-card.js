@@ -1,11 +1,11 @@
 import { Card } from '../../../models';
 
-const cards = () => {
+const addCard = (_, args, ctx) => {
   try {
-    return Card.find({});
+    return Card.create(args);
   } catch (err) {
     throw new Error(err);
   }
 };
 
-export default cards;
+export default addCard;

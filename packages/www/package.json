@@ -12,11 +12,14 @@
     "apollo-link-http": "^1.5.14",
     "apollo-link-ws": "^1.0.17",
     "apollo-utilities": "^1.2.1",
+    "faker": "^4.1.0",
     "graphql-tag": "^2.10.1",
+    "prop-types": "^15.7.2",
     "react": "^16.8.5",
     "react-apollo": "^2.5.4",
     "react-dom": "^16.8.5",
-    "react-scripts": "2.1.8"
+    "react-scripts": "2.1.8",
+    "styled-components": "^4.2.0"
   },
   "license": "MIT",
   "scripts": {

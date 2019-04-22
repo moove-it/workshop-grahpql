@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="350" src="https://github.com/slorenzo/monoreactql/blob/master/media/monoreactql.png?raw=true" alt="Logo"/>
+  <img width="350" src="https://github.com/moove-it/monoreactql/blob/master/media/monoreactql.png?raw=true" alt="Logo"/>
 </p>
 
 ## Installation
@@ -7,7 +7,7 @@
 First, clone the repository:
 
 ```bash
-git clone https://github.com/slorenzo/monoreactql.git your-app
+git clone https://github.com/moove-it/monoreactql.git your-app
 ```
 
 ## Getting Started
